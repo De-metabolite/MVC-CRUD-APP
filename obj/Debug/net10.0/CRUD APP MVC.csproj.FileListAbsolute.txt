@@ -141,6 +141,7 @@ C:\Users\hp\source\repos\CRUD APP MVC\obj\Debug\net10.0\CRUD APP MVC.csproj.Core
 C:\Users\hp\source\repos\CRUD APP MVC\obj\Debug\net10.0\CRUD APP MVC.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\hp\source\repos\CRUD APP MVC\obj\Debug\net10.0\CRUD APP MVC.RazorAssemblyInfo.cache
 C:\Users\hp\source\repos\CRUD APP MVC\obj\Debug\net10.0\CRUD APP MVC.RazorAssemblyInfo.cs
+C:\Users\hp\source\repos\CRUD APP MVC\obj\Debug\net10.0\CRUD APP MVC.sourcelink.json
 C:\Users\hp\source\repos\CRUD APP MVC\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\hp\source\repos\CRUD APP MVC\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\hp\source\repos\CRUD APP MVC\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json

@@ -20,7 +20,7 @@
                 <td>@Html.DisplayFor(m => item.Address)</td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn primary">Edit</a>
-                    <a href="#" class="btn btn danger delete-link" data-id="@item.Id">Delete</a>
+                    <a asp-action="Delete" href="#" class="btn btn danger delete-link" asp-route-id="@item.Id">Delete</a>
                     </td>
                 
                 
@@ -29,19 +29,19 @@
     </tbody>
 </table>
 <form id="delete-form" method="post" asp-action="Delete">
-    <input type="hidden" name="Id" id="delete-form"/>
+    <input type="hidden" name="id" id="delete-id"/>
     @Html.AntiForgeryToken()
 </form>
 @section Scripts{
     <script>
         $(function(){
             $('#myTable').DataTable();
-            const deleteform =document.getElementById('delete-form')
-            const deleteinput = document.getElementById()
+            const deleteform =document.getElementById('delete-form');
+            const deleteIdInput = document.getElementById('delete-id');
             document.querySelectorAll('.delete-link').forEach(link =>{link.AddEventListener('click', function(e){
-                e.preventDefault();
-                const studentId = this.dataset.Id;
-                swal.fire({
+                     e.preventDefault();
+                    const studentId = this.dataset.Id;
+                    swal.fire({
                     title: "Are you sure you want to delete this record?",
                     icon: 'Warning',
                     showCancelButton:'true',
@@ -49,14 +49,18 @@
                     CancelButtonColor:'#3085d6',
                     confirmButtonText: 'Yes'
 
-                }).then((result) =>{
-                    if(result.isConfirmed){
-                        deleteIdInput.value = student.Id;
-                        deleteform.submit();
+                    }).then((result) =>{
+                         if(result.isConfirmed){
+                            deleteIdInput.value = student.Id;
+                            deleteform.submit();
 
-                    }
+                        }
+                    });
                 });
-        });
+        
+            });
+    
+    });
 
-    </script>
-}
+ </script>
+ }
